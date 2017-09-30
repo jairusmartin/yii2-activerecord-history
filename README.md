@@ -6,10 +6,10 @@ yii2-activerecord-history
 [![Latest Unstable Version](https://poser.pugx.org/bupy7/yii2-activerecord-history/v/unstable)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
 [![License](https://poser.pugx.org/bupy7/yii2-activerecord-history/license)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
 
-This extension adds storage history of changes to the ActiveRecord model.
+This extension tracks changes to an ActiveRecord model. 
 
-Extension can tacking changes to model and save to storage.
-Allowed only storage to database. All changes saved to table in database.
+Changes to any model are saved to a single history table (i.e. audit trail).
+
 
 Installation
 ------------
@@ -34,7 +34,7 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-> NOTICE! Configuration of module must have in `common/config/main.php` if you will use `andanced` template. Or add configuration in both `config/web.php` and `config/console.php` if you will use `basic` template.
+> NOTICE! For the Yii2 `advanced` template use configuration path `common/config/main.php`. For the `basic` template use configuration path `config/web.php` and `config/console.php`.
 
 **Register of module to config file:**
 
